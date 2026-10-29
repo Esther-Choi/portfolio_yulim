@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yulim Choi | Full-Stack Developer</title>
+  <meta name="description" content="풀스택 웹 개발자 최유림의 포트폴리오. React, TypeScript, Next.js, NestJS, Node, MongoDB, AWS." />
+  <meta property="og:title" content="Yulim Choi | Full-Stack Developer" />
+  <meta property="og:description" content="프런트엔드와 백엔드를 오가며 서비스를 처음부터 출시까지 만드는 개발자." />
+  <meta property="og:image" content="/img/avatar.jpg" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23222'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='Helvetica,Arial' font-style='italic' font-size='30' fill='%23F8F8F8'%3EYC%3C/text%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+</head>
+<body class="is-loading">
+
+  <!-- Loader -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__count"><span data-loader-count>0</span>%</div>
+    <div class="loader__name">Yulim Choi · Portfolio 2026</div>
+  </div>
+
+  <!-- Cursor -->
+  <div class="cursor" aria-hidden="true"><span class="cursor__label">View</span></div>
+
+  <!-- Header -->
+  <header class="header">
+    <a href="#top" class="logo" aria-label="홈으로">
+      <span class="logo__mark">YC</span>
+    </a>
+    <nav class="nav" aria-label="주요 메뉴">
+      <a href="#about"><span>About</span><span aria-hidden="true">About</span></a>
+      <a href="#experience"><span>Experience</span><span aria-hidden="true">Experience</span></a>
+      <a href="#work"><span>Work</span><span aria-hidden="true">Work</span></a>
+      <a href="#contact"><span>Contact</span><span aria-hidden="true">Contact</span></a>
+    </nav>
+    <div class="header__right">
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="ko" lang="ko">KO</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" data-lang="en" lang="en">EN</button>
+      </div>
+      <a href="mailto:akdlwb33@gmail.com" class="header__cta link-underline">Get in touch <span class="arrow">↗</span></a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- Hero -->
+    <section class="hero" data-hero>
+      <div class="hero__stage" data-lens-source>
+        <div class="hero__watermark" aria-hidden="true"><span data-watermark>PORTFOLIO</span></div>
+        <div class="hero__blob" aria-hidden="true"></div>
+        <div class="hero__rail">
+          <span class="hero__rail-label">Full-stack developer</span>
+          <span class="hero__rail-line"></span>
+          <span class="hero__rail-year">2026</span>
+        </div>
+
+        <div class="hero__content">
+          <ul class="hero__stats">
+            <li><strong><sup>+</sup><span data-count="5" data-years-since="2021-05">0</span></strong><span>Years building<br />for the web</span></li>
+            <li><strong><sup>+</sup><span data-count="9" data-project-count>0</span></strong><span>Projects<br />shipped</span></li>
+          </ul>
+
+          <h1 class="hero__title">
+            <span class="reveal-line"><span>Hello</span></span>
+          </h1>
+          <p class="hero__sub reveal-fade">It's Yulim, a full-stack <em>developer</em></p>
+
+          <a href="#about" class="hero__scroll reveal-fade">Scroll down <span class="arrow-down">↓</span></a>
+        </div>
+
+        <figure class="hero__portrait">
+          <img src="/img/avatar.jpg" alt="최유림 프로필 사진" width="1000" height="985" />
+        </figure>
+      </div>
+
+      <!-- Magnifier lens (filled by JS) -->
+      <div class="lens" aria-hidden="true" inert>
+        <div class="lens__inner" data-lens-target></div>
+      </div>
+      <div class="lens-ring" aria-hidden="true"></div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee" aria-label="기술 스택">
+      <div class="marquee__track" data-marquee>
+        <span>React</span><i>✦</i><span>TypeScript</span><i>✦</i><span>Next.js</span><i>✦</i><span>NestJS</span><i>✦</i><span>Node.js</span><i>✦</i><span>MongoDB</span><i>✦</i><span>AWS</span><i>✦</i><span>GitHub Actions</span><i>✦</i><span>Svelte</span><i>✦</i><span>Spring</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- About -->
+    <section class="about section" id="about">
+      <div class="about__watermark" aria-hidden="true">YC</div>
+      <div class="container">
+        <p class="eyebrow">( 01 ) About me</p>
+        <h2 class="display reveal-line"><span>About <em>me</em></span></h2>
+        <p class="about__lead" data-scrub-words data-i18n="about.lead1">
+          스펙의 빈틈과 예외 상황을 먼저 찾아내고, 복잡하고 변화하는 요구사항 속에서도 기능을 안정적으로 완성하는 개발자입니다.
+        </p>
+        <p class="about__lead" data-scrub-words data-i18n="about.lead2">
+          프런트엔드와 백엔드를 모두 경험하며 UI 구현과 ERD 설계부터 API 연동, 결제 시스템, CI/CD 구축, 서비스 출시까지 전체 개발 사이클을 다뤄 왔습니다.<br />최근 2년간은 성과관리 SaaS Clap에서 권한과 상태에 따라 복잡하게 달라지는 평가 워크플로우를 설계하고 구현했습니다. 또한 Claude Code를 활용한 개발과 AI 기반 브라우저 자동화 QA를 실무에 적용해 개발 생산성과 기능 검증 과정을 개선해 왔습니다.
+        </p>
+
+        <div class="about__card reveal-up">
+          <div class="gradient" aria-hidden="true">
+            <span class="gradient__blob gradient__blob--1"></span>
+            <span class="gradient__blob gradient__blob--2"></span>
+            <span class="gradient__blob gradient__blob--3"></span>
+            <span class="grain"></span>
+          </div>
+          <blockquote class="about__quote">
+            <p data-i18n="about.quote">“더 오래 고민하기보다,<br />더 나은 <em class="ko">방법</em>을 찾습니다.”</p>
+            <footer data-i18n="about.quoteSub">문제를 정확히 이해하고, 필요한 도구를 활용해 가장 효율적인 해결책을 찾습니다.</footer>
+          </blockquote>
+          <div class="stat-card">
+            <span class="stat-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.8 3 2.8 15 0 18M12 3c-2.8 3-2.8 15 0 18"/></svg>
+            </span>
+            <strong><span data-count="5">0</span></strong>
+            <p data-i18n="about.stat">개의 회사에서 쌓은 프런트엔드 · 백엔드 · 풀스택 실무 경험</p>
+          </div>
+        </div>
+
+        <div class="skills">
+          <div class="skills__group reveal-up">
+            <h3>Frontend</h3>
+            <p>React · Next.js · TypeScript · JavaScript · Svelte · jQuery · HTML · CSS / Sass · Material UI · React Native</p>
+          </div>
+          <div class="skills__group reveal-up">
+            <h3>Backend</h3>
+            <p>Node.js · NestJS · Express · MongoDB · PostgreSQL · MySQL · Oracle · Java · Spring · MyBatis · REST API</p>
+          </div>
+          <div class="skills__group reveal-up">
+            <h3>Infra &amp; etc.</h3>
+            <p>AWS · GitHub Actions CI/CD · Linux · Git · Network &amp; Web Security</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="experience section" id="experience">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">( 02 ) Experience</p>
+          <h2 class="display reveal-line"><span>Where I've <em>worked</em></span></h2>
+        </div>
+
+        <ol class="xp">
+          <li class="xp__item reveal-up">
+            <span class="xp__period">2024.10 ~ 2026.10</span>
+            <div class="xp__head">
+              <h3>Clap</h3>
+              <p class="xp__role">Frontend Developer · AI-assisted Development · Enterprise SaaS</p>
+              <ul class="xp__stats">
+                <li><strong>1,000+</strong><span>PRs</span></li>
+                <li><strong>20+</strong><span>Features</span></li>
+              </ul>
+            </div>
+            <ul class="xp__desc" data-i18n="xp.clap">
+              <li><strong>핵심 워크플로우 개발:</strong> 이의 신청, 목표 그룹, 대상자 지정 평가, 인사카드 파일 관리 등 20개 이상의 피처 개발 참여</li>
+              <li><strong>복잡한 업무 흐름 설계:</strong> 권한·상태·마감일이 연결된 다단계 평가 워크플로우 구현. 이의 신청 기능은 신청·처리·승인 3단계 워크플로우 구현, 약 4주간 PR 52건 작성</li>
+              <li><strong>기능 배포 및 코드 품질 개선:</strong> 14개 피처의 Feature Flag 도입부터 활성화·제거까지 담당. React Query 쿼리 키 20여 개를 도메인 기반 계층 구조로 재편하고 불필요한 API 요청 개선</li>
+              <li><strong>다양한 기능 및 엔터프라이즈 대응:</strong> 리뷰·연봉 설정·목표 관리·동료평가·엑셀 업로드 매칭 등 개발. 금융·모빌리티·커머스 분야 고객사 4곳 이상의 개별 요구사항 대응</li>
+              <li><strong>AI 기반 개발 프로세스 개선:</strong> Claude Code를 활용한 개발 효율화 및 Aside 기반 브라우저 자동화 QA 적용</li>
+            </ul>
+            <p class="xp__stack">React · TypeScript · React Query · i18n · Feature Flags · Claude Code · Aside</p>
+          </li>
+          <li class="xp__item reveal-up">
+            <span class="xp__period">2023.07 ~ 2024.09</span>
+            <div class="xp__head">
+              <h3>Pandarank</h3>
+              <p class="xp__role">Full-Stack Web Developer</p>
+            </div>
+            <ul class="xp__desc" data-i18n="xp.pandarank">
+              <li>기존 웹 서비스 유지보수·개선 및 신규 프로젝트 개발·출시: 체험단, 채널 영향력, 아카데미, 네이버페이 결제</li>
+              <li>CodeCommit에서 GitHub로 저장소 이전</li>
+              <li>GitHub Actions 기반 CI/CD 파이프라인 구축</li>
+            </ul>
+            <p class="xp__stack">HTML · Sass · JavaScript · Node.js · MongoDB · AWS · GitHub Actions</p>
+          </li>
+          <li class="xp__item reveal-up">
+            <span class="xp__period">2022.08 ~ 2023.06</span>
+            <div class="xp__head">
+              <h3>CRAA</h3>
+              <p class="xp__role">Full-Stack Web Developer · 100% Remote</p>
+            </div>
+            <ul class="xp__desc" data-i18n="xp.craa">
+              <li>글로벌 제약사 교육 포털 4종(관리자·고객·사용자·교육)의 프런트엔드·백엔드 개발</li>
+              <li>온라인 시험 화면 실시간 녹화 및 대용량 영상 분할 업로드 시스템 구현</li>
+              <li>관리자용 시험 영상 시간대별 검토 및 답안 채점 워크플로우 개발</li>
+              <li>영상 관리·퀴즈·자막 기능을 포함한 동영상 강의 시스템 설계 및 전체 개발</li>
+            </ul>
+            <p class="xp__stack">React · TypeScript · Next.js · NestJS · MongoDB · AWS</p>
+          </li>
+          <li class="xp__item reveal-up">
+            <span class="xp__period">2021.08 ~ 2022.06</span>
+            <div class="xp__head">
+              <h3>Geomexsoft</h3>
+              <p class="xp__role">Front-End Web Developer</p>
+            </div>
+            <ul class="xp__desc" data-i18n="xp.geomex">
+              <li><strong>AI-PAM:</strong> 간호사 스테이션 대시보드, 실시간 영상 모니터링·알림, 병동 관리 화면 개발</li>
+              <li><strong>SPPA:</strong> 삼성물산·포스코건설 등 건설 현장에서 사용하는 항타 관입량 계측 시스템의 클라우드 웹 프런트엔드 개발</li>
+              <li>Cesium 기반 3D 지도 기술 연구</li>
+            </ul>
+            <p class="xp__stack">HTML · CSS · JavaScript · jQuery · Svelte</p>
+          </li>
+          <li class="xp__item reveal-up">
+            <span class="xp__period">2021.05 ~ 2021.08</span>
+            <div class="xp__head">
+              <h3>Ilsong Info</h3>
+              <p class="xp__role">Back-End Web Developer</p>
+            </div>
+            <ul class="xp__desc" data-i18n="xp.ilsong">
+              <li>회원가입·로그인·게시판·본인인증 등 웹 서비스 백엔드 기능 개발</li>
+              <li>퍼블리셔와 협업해 HTML 화면 수정 및 백엔드 연동</li>
+            </ul>
+            <p class="xp__stack">Java · Spring · MySQL</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Engineering notes -->
+    <section class="notes section" id="engineering">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">( 03 ) Engineering notes</p>
+          <h2 class="display reveal-line"><span>Beyond the <em>features</em></span></h2>
+        </div>
+        <ol class="notes__list">
+          <li class="note reveal-up">
+            <span class="note__index">01</span>
+            <h3>Query Key Architecture</h3>
+            <p data-i18n="note.queryKeys">흩어져 있던 React Query 쿼리 키 20여 개를 계층형 구조로 통합해 캐시 무효화 범위를 명확하게 관리할 수 있도록 개선했습니다.</p>
+            <span class="note__date">2025.09</span>
+          </li>
+          <li class="note reveal-up">
+            <span class="note__index">02</span>
+            <h3>Request Hygiene</h3>
+            <p data-i18n="note.requests">중복 PUT 요청, 불필요한 통계 요청, 반복 발생하는 404, 불필요한 DELETE 요청을 찾아 원인을 개선하고 요청 흐름을 정리했습니다.</p>
+            <span class="note__date">Ongoing</span>
+          </li>
+          <li class="note reveal-up">
+            <span class="note__index">03</span>
+            <h3>UI Consistency</h3>
+            <p data-i18n="note.ui">기존 공통 컴포넌트를 활용하고, 기존 테이블 화면을 공통 템플릿 기반으로 전환해 UI 일관성을 높였습니다.</p>
+            <span class="note__date">Component Reuse</span>
+          </li>
+          <li class="note reveal-up">
+            <span class="note__index">04</span>
+            <h3>AI-assisted Development</h3>
+            <p data-i18n="note.ai">Claude Code를 활용한 개발 작업과 브라우저 자동화 QA를 실무에 적용했습니다. 반복적인 피처 플래그 제거 작업을 위한 Claude Code 스킬도 개선했습니다.</p>
+            <span class="note__date">AI Workflow</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Work (horizontal scroll on desktop) -->
+    <section class="work" id="work" data-hscroll>
+      <div class="work__sticky">
+        <div class="work__head container">
+          <p class="eyebrow">( 04 ) Selected work</p>
+          <h2 class="display"><span>Things I've <em>built</em></span></h2>
+          <p class="work__progress"><span data-work-index>01</span> / <span data-work-total>09</span></p>
+        </div>
+        <div class="work__track" data-hscroll-track>
+          <!-- cards rendered by src/main.ts -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Working with me -->
+    <section class="team section" id="team">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">( 05 ) Working with me</p>
+          <h2 class="display reveal-line"><span>What teammates <em>say</em></span></h2>
+        </div>
+
+        <div class="quotes">
+          <figure class="quote reveal-up">
+            <blockquote data-i18n="team.quote1">“스펙 추가와 변경이 급하게 이어지는 상황에서도 큰 문제 없이 진행될 수 있었던 점이 인상적이었습니다.”</blockquote>
+            <figcaption data-i18n="team.quote1By">함께 일한 동료</figcaption>
+          </figure>
+          <figure class="quote reveal-up">
+            <blockquote data-i18n="team.quote2">“문제 상황을 논리적으로 설명해 주셔서 의사결정에 도움이 되었어요.”</blockquote>
+            <figcaption data-i18n="team.quote2By">함께 일한 기획자</figcaption>
+          </figure>
+        </div>
+
+        <div class="team__note">
+          <p data-i18n="team.note">아래에서 동료들의 피드백에 반복적으로 등장한 일하는 방식과 강점을 소개합니다.</p>
+        </div>
+        <ol class="strengths">
+          <li class="strength reveal-up">
+            <span class="strength__index">01</span>
+            <h3 class="strength__title" data-i18n="team.s1">빈틈을 먼저 찾습니다</h3>
+            <p class="strength__desc" data-i18n="team.s1d">기획에서 놓친 부분, 명세 누락, API 스펙 오류, 테스트 범위 밖의 영향 지점까지 먼저 찾아 공유했습니다.</p>
+          </li>
+          <li class="strength reveal-up">
+            <span class="strength__index">02</span>
+            <h3 class="strength__title" data-i18n="team.s2">변화 속에서도 끝까지 마무리합니다</h3>
+            <p class="strength__desc" data-i18n="team.s2d">잦은 스펙 변경 속에서도 복잡한 기능을 빠르게 완성했고, 릴리즈 후 QA 및 Live 이슈에도 신속하게 대응했습니다.</p>
+          </li>
+          <li class="strength reveal-up">
+            <span class="strength__index">03</span>
+            <h3 class="strength__title" data-i18n="team.s3">논리적으로 설명하고 기록합니다</h3>
+            <p class="strength__desc" data-i18n="team.s3d">질문과 답변, 문제 API와 계정을 문서로 정리했습니다. 문제 상황과 기술적 맥락을 명확하게 설명해 의사결정을 돕고, 요구사항과 기술 문서 간의 연결을 명확히 했습니다.</p>
+          </li>
+          <li class="strength reveal-up">
+            <span class="strength__index">04</span>
+            <h3 class="strength__title" data-i18n="team.s4">구현을 넘어 설계에 참여합니다</h3>
+            <p class="strength__desc" data-i18n="team.s4d">권한을 잃었을 때의 동작을 설계하며 데이터 조회와 액션의 경계를 구분하자고 제안해 UX 방향을 정했습니다. 다른 피처와 겹치는 부분도 미리 파악해 대응 방향을 조율했습니다.</p>
+          </li>
+          <li class="strength reveal-up">
+            <span class="strength__index">05</span>
+            <h3 class="strength__title" data-i18n="team.s5">팀 전체의 품질을 살핍니다</h3>
+            <p class="strength__desc" data-i18n="team.s5d">기존 컨벤션과 공통 컴포넌트를 활용해 코드 일관성을 유지하고, 다른 피처의 동일한 결함이나 다국어 빌드 오류도 발견 즉시 공유하고 대응했습니다. 동료의 업무 적응도 도왔습니다.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <div class="gradient gradient--contact" aria-hidden="true">
+        <span class="gradient__blob gradient__blob--1"></span>
+        <span class="gradient__blob gradient__blob--2"></span>
+        <span class="gradient__blob gradient__blob--3"></span>
+        <span class="grain"></span>
+      </div>
+      <div class="contact__inner container">
+        <p class="eyebrow eyebrow--light">( 06 ) Contact</p>
+        <h2 class="contact__title">
+          <span class="reveal-line"><span>Let's build</span></span>
+          <span class="reveal-line"><span>something <em>together</em></span></span>
+        </h2>
+        <div class="contact__actions">
+          <a href="mailto:akdlwb33@gmail.com" class="contact__mail magnetic">
+            <span class="contact__mail-text">
+              <span class="contact__mail-label">Email</span>
+              <span class="contact__mail-address">akdlwb33@gmail.com</span>
+            </span>
+            <span class="contact__mail-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+            </span>
+          </a>
+          <button type="button" class="contact__copy" data-copy-email="akdlwb33@gmail.com">
+            <span class="contact__copy-idle">Copy</span>
+            <span class="contact__copy-done" aria-live="polite">Copied ✓</span>
+          </button>
+        </div>
+        <div class="contact__bottom">
+          <ul class="socials">
+            <li><a href="https://github.com/Esther-Choi" target="_blank" rel="noopener" class="link-underline">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/yulimchoi/" target="_blank" rel="noopener" class="link-underline">LinkedIn</a></li>
+          </ul>
+          <p class="contact__meta">Based in Seoul, South Korea<br />Open to new opportunities</p>
+        </div>
+      </div>
+      <footer class="footer container">
+        <span>© 2026 Yulim Choi</span>
+        <a href="#top" class="link-underline">Back to top ↑</a>
+      </footer>
+    </section>
+  </main>
+
+  <!-- Project modal -->
+  <div class="modal" data-modal hidden>
+    <div class="modal__backdrop" data-modal-close></div>
+    <article class="modal__panel" data-lenis-prevent role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1">
+      <button class="modal__close" type="button" data-modal-close aria-label="닫기">Close ✕</button>
+      <div class="modal__body" data-modal-body></div>
+    </article>
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
