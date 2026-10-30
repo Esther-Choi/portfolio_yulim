@@ -32,6 +32,7 @@ export const en: Record<string, string> = {
 `,
   'xp.pandarank': `
               <li>Maintained and improved existing services, and built and launched new ones: influencer campaigns, channel rankings, an academy and Naver Pay checkout</li>
+              <li>Migrated the frontend from HTML and jQuery to Next.js</li>
               <li>Moved repositories from CodeCommit to GitHub</li>
               <li>Set up a CI/CD pipeline with GitHub Actions</li>
 `,
