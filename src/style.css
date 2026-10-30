@@ -3169,6 +3169,121 @@ button {
   font-weight: 600;
 }
 
+.m-phone {
+  position: absolute;
+  aspect-ratio: 9 / 19;
+  padding: 0.5em;
+  border-radius: 2.2em;
+  background: #111;
+  box-shadow: 0 1.2em 3em rgba(10, 20, 40, 0.35);
+}
+.m-phoneScreen {
+  height: 100%;
+  border-radius: 1.8em;
+  overflow: hidden;
+  background: #fbf7f4;
+  display: flex;
+  flex-direction: column;
+}
+.m-inviteHero {
+  flex: 1.3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 0.3em;
+  padding: 1em;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.55)), radial-gradient(circle at 40% 35%, #e9c9c3, #8c6a68 75%);
+  color: #fff;
+  text-align: center;
+}
+.m-inviteHero span {
+  font-size: 0.55em;
+  letter-spacing: 0.18em;
+}
+.m-inviteHero b {
+  font-family: var(--f-serif);
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.15em;
+}
+.m-inviteHero i {
+  font-style: normal;
+  font-size: 0.6em;
+  letter-spacing: 0.1em;
+}
+.m-pass {
+  margin: 0.8em;
+  padding: 0.8em;
+  border-radius: 0.8em;
+  background: #fff;
+  border: 1px dashed #e3cfc9;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  font-size: 0.8em;
+}
+.m-passRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.m-passRow b {
+  font-family: var(--f-display);
+  font-size: 1.5em;
+  font-weight: 500;
+}
+.m-passRow i {
+  font-style: normal;
+  color: #c98b86;
+}
+.m-btn--rose {
+  text-align: center;
+  background: #c98b86;
+  color: #fff;
+}
+.m-alerts--light {
+  grid-template-columns: repeat(3, 1fr);
+}
+.m-alerts--light div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+  padding: 0.7em;
+  border-radius: 0.6em;
+  background: var(--m-soft);
+  font-size: 0.8em;
+}
+.m-alerts--light b {
+  font-family: var(--f-display);
+  font-size: 1.8em;
+  font-weight: 400;
+  line-height: 1;
+}
+.m-photos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.4em;
+}
+.m-photo {
+  aspect-ratio: 1;
+  border-radius: 0.4em;
+}
+.m-photo--0 {
+  background: linear-gradient(135deg, #f1d3c9, #c99a91);
+}
+.m-photo--1 {
+  background: linear-gradient(135deg, #d9e1ea, #9fb0c4);
+}
+.m-photo--2 {
+  background: linear-gradient(135deg, #efe3c8, #c8b17f);
+}
+.m-photo--3 {
+  background: linear-gradient(135deg, #dcd3e8, #a493bf);
+}
+.m-filters--wrap {
+  flex-wrap: wrap;
+}
+
 .modal__mock {
   position: relative;
   margin-top: 40px;

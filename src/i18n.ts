@@ -214,6 +214,26 @@ export const projectsEn: Record<string, ProjectText> = {
       'Built dashboards, data management, tables and charts for each portal',
     ],
   },
+  ivite: {
+    subtitle: 'A mobile wedding invitation service that started as my own invitation',
+    metrics: [
+      { value: 'Solo', label: 'Planned, built and run on my own' },
+      { value: '4 Languages', label: 'Korean · English · French · Spanish' },
+      { value: '2 Payments', label: 'KakaoPay · Lemon Squeezy' },
+      { value: 'AI-assisted', label: 'Built solo with Claude Code' },
+    ],
+    problem:
+      'This started when I made the invitation for my own wedding. I wanted something fun for friends but easy to read for my parents\' friends, and it also had to work for guests from overseas.\n\nOnce it was done, I turned it into a product other couples could use.',
+    did: [
+      'Did everything myself: planning, design, development, deployment and operations',
+      'Designed it so couples enter their details once and get two invitations: an iPhone-style one for friends and a simple one for older guests',
+      'Supported four languages: Korean, English, French and Spanish',
+      'Built the guest features: RSVP, guestbook, photo uploads via QR code, a mini-game leaderboard, maps and one-tap account copying for gifts',
+      'Built an admin dashboard where couples manage responses, messages and photos',
+      'Integrated KakaoPay for Korean customers and Lemon Squeezy for international ones',
+      'Leaned on Claude Code to move faster and cover more ground as a solo developer',
+    ],
+  },
   'craa-lecture': {
     subtitle: 'Video lectures: video management, quizzes and subtitles',
     metrics: [

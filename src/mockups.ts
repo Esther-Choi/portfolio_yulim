@@ -533,7 +533,41 @@ const dice = () => {
   </div>`;
 };
 
+/* -------------------------------------------------------------------------- */
+
+const ivite = () => `
+  <div class="m-phone" style="left:8%;top:5%;width:27%">
+    <div class="m-phoneScreen">
+      <div class="m-inviteHero"><span>WE'RE GETTING MARRIED</span><b>Minjun &amp; Seoyeon</b><i>2026. 05. 23 SAT</i></div>
+      <div class="m-pass"><span class="m-s">BOARDING PASS · RSVP</span><div class="m-passRow"><b>ICN</b><i>✈</i><b>LOVE</b></div><span class="m-btn m-btn--rose">참석 여부 전달하기</span></div>
+    </div>
+  </div>
+
+  <div class="m-win m-win--col" style="left:40%;top:16%;width:44%;height:68%">
+    <div class="m-main">
+      <div class="m-head"><b>관리자</b><span class="m-s">Minjun &amp; Seoyeon</span></div>
+      <div class="m-alerts m-alerts--light">
+        <div><span>참석</span><b>128</b></div>
+        <div><span>불참</span><b>14</b></div>
+        <div><span>방명록</span><b>36</b></div>
+      </div>
+      <b class="m-ft">하객 사진</b>
+      <div class="m-photos">${Array.from({ length: 8 }, (_, i) => `<i class="m-photo m-photo--${i % 4}"></i>`).join('')}</div>
+    </div>
+  </div>
+
+  <div class="m-float" style="right:4%;top:5%;width:22%">
+    <span class="m-s">Language</span>
+    <div class="m-filters m-filters--wrap"><span class="m-chip m-chip--dark">한국어</span><span class="m-chip">English</span><span class="m-chip">Français</span><span class="m-chip">Español</span></div>
+  </div>
+
+  <div class="m-float m-float--late" style="right:6%;bottom:8%;width:24%">
+    <b class="m-ft">결제 완료</b>
+    <div class="m-checkRow"><span>카카오페이</span><b>49,900원</b></div>
+  </div>`;
+
 export const mockups: Record<string, () => string> = {
+  ivite,
   reward,
   influencer,
   naverpay,
