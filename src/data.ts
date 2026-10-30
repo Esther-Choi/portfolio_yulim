@@ -238,7 +238,7 @@ export const projects: Project[] = [
       '카카오페이(국내)와 Lemon Squeezy(해외) 결제 연동',
       'Claude Code를 적극 활용해 1인 개발 속도와 범위 확장',
     ],
-    stack: ['Next.js', 'Turso', 'KakaoPay', 'Lemon Squeezy', 'Vercel', 'Claude Code'],
+    stack: ['Next.js', 'TypeScript', 'Turso', 'KakaoPay', 'Lemon Squeezy', 'Vercel', 'Claude Code'],
     link: { label: 'iviteapp.com', href: 'https://www.iviteapp.com/ko' },
   },
   {
