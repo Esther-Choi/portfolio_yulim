@@ -23,6 +23,9 @@ const pad = (n: number) => String(n).padStart(2, '0');
 const LANG_KEY = 'portfolio-lang';
 
 function initialLang(): Lang {
+  // a shared link like /?lang=en always opens in that language
+  const fromUrl = new URLSearchParams(location.search).get('lang');
+  if (fromUrl === 'ko' || fromUrl === 'en') return fromUrl;
   try {
     const saved = localStorage.getItem(LANG_KEY);
     if (saved === 'ko' || saved === 'en') return saved;
@@ -254,6 +257,8 @@ async function runIntro() {
 /* --------------------------------------------------------------------------
    Magnifier lens (hero)
    -------------------------------------------------------------------------- */
+let refreshLens: (() => void) | null = null;
+
 function buildLens() {
   if (reduceMotion || !finePointer) return;
   const hero = $('[data-hero]')!;
@@ -263,14 +268,16 @@ function buildLens() {
   const ring = $('.lens-ring', hero)!;
   const cursor = $('.cursor');
 
-  // Snapshot the hero (after counters settle) into the lens
-  gsap.delayedCall(1.8, () => {
+  // Snapshot the hero (after counters settle) into the lens; re-run when the language changes
+  refreshLens = () => {
     target.innerHTML = '';
     const clone = source.cloneNode(true) as HTMLElement;
     clone.removeAttribute('data-lens-source');
+    $$('[data-i18n]', clone).forEach((el) => el.removeAttribute('data-i18n'));
     $$('a', clone).forEach((a) => a.setAttribute('tabindex', '-1'));
     target.appendChild(clone);
-  });
+  };
+  gsap.delayedCall(1.8, refreshLens);
 
   const R = 92;
   const pos = { x: 0, y: 0, tx: 0, ty: 0 };
@@ -749,6 +756,7 @@ function applyLang(next: Lang, rebuild: boolean) {
   if (!rebuild) return;
   $$('[data-scrub-words]').forEach(scrubWords);
   updateCardText();
+  refreshLens?.();
   const open = openId && !modal.hidden && findProject(openId);
   if (open) body.innerHTML = modalHTML(open);
   ScrollTrigger.refresh();

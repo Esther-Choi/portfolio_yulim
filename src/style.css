@@ -1044,6 +1044,59 @@ button {
   }
 }
 
+.edu {
+  margin-top: clamp(64px, 8vw, 112px);
+}
+.edu__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  margin-bottom: 16px;
+}
+.edu__head .eyebrow {
+  margin: 0;
+}
+.edu__note {
+  font-size: 14px;
+  color: var(--c-mute);
+}
+.edu ul {
+  border-top: 1px solid var(--c-line);
+}
+.edu li {
+  display: grid;
+  grid-template-columns: 200px minmax(0, 1fr) minmax(0, 1.3fr);
+  column-gap: clamp(24px, 4vw, 64px);
+  align-items: baseline;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--c-line);
+}
+.edu li span {
+  font-family: var(--f-display);
+  font-size: 14px;
+  color: var(--c-mute);
+}
+.edu li strong {
+  font-family: var(--f-display);
+  font-weight: 400;
+  font-size: 19px;
+  letter-spacing: -0.02em;
+}
+.edu li em {
+  font-family: var(--f-body);
+  font-style: normal;
+  font-size: 15px;
+  color: var(--c-mute);
+}
+@media (max-width: 900px) {
+  .edu li {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}
+
 /* ==========================================================================
    Engineering notes
    ========================================================================== */

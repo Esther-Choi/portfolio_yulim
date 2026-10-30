@@ -8,12 +8,20 @@ export type Lang = 'ko' | 'en';
  */
 export const en: Record<string, string> = {
   'about.lead1':
-    'I find the gaps and edge cases in a spec before they turn into bugs, and I ship features that hold up even when the requirements keep shifting.',
+    "I'm a full-stack TypeScript developer working across React and Node.js. I find the gaps and edge cases in a spec before they turn into bugs, and I ship features that hold up even when the requirements keep shifting.",
   'about.lead2':
-    "I've worked on both the frontend and the backend, covering the whole cycle from UI and ERD design to API integration, payments, CI/CD and launch.<br />For the past two years at Clap, a performance management SaaS, I designed and built review workflows that change depending on roles and states. I've also brought Claude Code and AI-driven browser QA into my day-to-day work to ship faster and test more thoroughly.",
+    "I've covered the whole cycle from UI and data modeling to APIs, payments, CI/CD and production support, and I've spent the last few years working fully remote, first for a US company building products for US clients and now at Clap.<br />At Clap, an enterprise performance management SaaS, I built multi-step review workflows driven by roles, permissions and state transitions. I also use Claude Code and AI-driven browser QA every day to ship faster and test more thoroughly.",
   'about.quote': '“Instead of thinking longer,<br />I look for a better <em>way</em>.”',
   'about.quoteSub': 'Understand the problem properly, pick the right tools, and find the most efficient fix.',
   'about.stat': 'companies, across frontend, backend and full-stack roles',
+  'hero.sub': "It's Yulim, a full-stack <em>TypeScript</em> developer",
+  'hero.rail': 'Full-stack TypeScript developer',
+  'edu.note': 'High school and university in the Philippines, taught in English',
+  'edu.list': `
+            <li><span>2019 ~ 2021</span><strong>Korea IT Academy</strong><em>Java, DBMS, Linux, networking, information security and web development</em></li>
+            <li><span>2015 ~ 2016</span><strong>University of the Philippines</strong><em>Forestry (on leave)</em></li>
+            <li><span>2011 ~ 2015</span><strong>South Hill School</strong><em>Philippines · Graduated</em></li>
+`,
 
   'xp.clap': `
               <li><strong>Core workflows:</strong> Worked on 20+ features, including appeals, goal groups, self-selected reviews and HR card file management</li>
@@ -28,8 +36,9 @@ export const en: Record<string, string> = {
               <li>Set up a CI/CD pipeline with GitHub Actions</li>
 `,
   'xp.craa': `
+              <li>Worked for a US company on products for US clients, with the product, data and documentation all in English</li>
               <li>Built the frontend and backend of four training portals (admin, client, user and training) for a global pharmaceutical company</li>
-              <li>Implemented live screen recording for online exams and chunked uploads for large video files</li>
+              <li>Implemented live screen recording for online exams and chunked uploads with retries for large video files</li>
               <li>Built the admin workflow for reviewing exam recordings by timestamp and grading answers</li>
               <li>Designed and built a video lecture system with video management, quizzes and subtitles</li>
 `,
@@ -126,7 +135,7 @@ export const projectsEn: Record<string, ProjectText> = {
     did: [
       'Owned the whole flow from request to review to approval, with separate screens for each role',
       'Built new Review and Approval tabs: tables, filters, deadline banners, D-Day badges, per-step deadlines and reminder notifications',
-      'Integrated the grade change approval API, added permission guards and built logic that closes a step automatically once its deadline passes',
+      'Integrated the grade change approval API, added role-based permission guards and built the state transitions, including closing a step automatically once its deadline passes',
       'Started on temporary types before the server DTOs were final and swapped them out later, so the frontend could move in parallel with the backend',
     ],
     teamwork: [
@@ -145,7 +154,7 @@ export const projectsEn: Record<string, ProjectText> = {
     did: [
       'Built the new overview and settings pages: creating and editing groups, the member picker and three kinds of error banners',
       'Applied goal group rules to existing features, including reviewer settings, performance linking, the goal drawer and weighting',
-      'Made the server response the single source of truth for goal group membership and used it for every related disabled state and validation',
+      'Made the server response the single source of truth for goal group membership and drove every related disabled state and validation from it',
     ],
     teamwork: [
       'Caught server spec errors and missing specs, and pointed out side effects that were easy to miss in testing',
@@ -181,8 +190,8 @@ export const projectsEn: Record<string, ProjectText> = {
     did: [
       'Built the file section on the dashboard, the upload modal and the file management page',
       'Added tables, filters and tabs to the file management page for browsing and managing files',
-      'Implemented permission-based access and file size and count limits',
-      "Supported each client's custom section setup in file management",
+      'Implemented role-based file access and file size and count limits',
+      "Supported per-client custom section configuration in file management",
     ],
   },
   'craa-exam': {
@@ -190,7 +199,7 @@ export const projectsEn: Record<string, ProjectText> = {
     metrics: [
       { value: '4 Portals', label: 'Full-stack Development', desc: 'Frontend and backend for four portals' },
       { value: 'Screen Recording', label: 'Exam Recording', desc: 'The entire exam recorded live' },
-      { value: 'Chunked Upload', label: 'Large File Processing', desc: 'Large videos split, uploaded and processed on the server' },
+      { value: 'Chunked Upload', label: 'Large File Processing', desc: 'Large videos split into chunks, with retries' },
       { value: 'Review Workflow', label: 'Exam Review', desc: 'Recordings reviewed by timestamp' },
     ],
     problem:
@@ -199,7 +208,7 @@ export const projectsEn: Record<string, ProjectText> = {
       'Built the frontend and backend of all four portals: admin, client, user and training',
       'Implemented PDF-based questions, note taking and answer submission',
       'Built live recording of the exam screen',
-      'Built an upload flow that splits large recordings into chunks, sends them and processes them on the server',
+      'Built an upload flow that splits large recordings into chunks, retries any chunk that fails and reassembles them on the server',
       'Built an admin screen for checking answers while jumping through the exam video by timestamp',
       'Built dashboards, data management, tables and charts for each portal',
     ],
@@ -230,7 +239,7 @@ export const projectsEn: Record<string, ProjectText> = {
       'Owned development end to end, from ERD design and markup to launch',
       'Built features and access control for three user roles',
       'Built point-based features such as creating campaigns and paying out points',
-      'Ran all point earning and spending logic in transactions to keep the data consistent',
+      'Ran every point credit and debit inside database transactions to keep the ledger consistent',
       'Built point top-ups with Payple bank account registration and payments',
     ],
     result: 'Built the whole service solo, from ERD design to payment integration, and launched it.',
@@ -310,15 +319,15 @@ export const projectsEn: Record<string, ProjectText> = {
       'Game masters post the games they want to run, and players browse and sign up. I built the whole path from joining a game to paying for it, with KakaoPay for players in Korea and PayPal for everyone else.',
     ],
     did: [
-      'Planned the service and designed the database ERD',
+      'Planned the service and designed the PostgreSQL data model',
       'Built the entire frontend and backend',
       'Built the core features: posting, browsing and joining games',
       'Integrated KakaoPay for Korean users and PayPal for international users',
-      'Built a scheduler that charges the saved payment method automatically based on the game schedule',
+      'Built a cron-based scheduler that charges the saved payment method on the game schedule, with retries for failed payments',
     ],
     keyFeature: {
       title: 'Scheduled Automatic Payments',
-      text: "A scheduler charges each player's saved payment method automatically, timed to the game session.",
+      text: "A cron job charges each player's saved payment method automatically, timed to the game session, and retries the charge if it fails.",
     },
     metrics: [
       { value: '100%', label: 'End-to-end Development', desc: 'Everything from planning to frontend and backend' },
