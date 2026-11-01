@@ -8,20 +8,12 @@ export type Lang = 'ko' | 'en';
  */
 export const en: Record<string, string> = {
   'about.lead1':
-    "I'm a full-stack TypeScript developer working across React and Node.js. I find the gaps and edge cases in a spec before they turn into bugs, and I ship features that hold up even when the requirements keep shifting.",
+    'I find the gaps and edge cases in a spec before they turn into bugs, and I ship features that hold up even when the requirements keep shifting.',
   'about.lead2':
-    "I've covered the whole cycle from UI and data modeling to APIs, payments, CI/CD and production support, and I've spent the last few years working fully remote, first for a US company building products for US clients and now at Clap.<br />At Clap, an enterprise performance management SaaS, I built multi-step review workflows driven by roles, permissions and state transitions. I also use Claude Code and AI-driven browser QA every day to ship faster and test more thoroughly.",
+    "I've worked on both the frontend and the backend, covering the whole cycle from UI and ERD design to API integration, payments, CI/CD and launch.<br />For the past two years at Clap, a performance management SaaS, I designed and built review workflows that change depending on roles and states. I've also brought Claude Code and AI-driven browser QA into my day-to-day work to ship faster and test more thoroughly.",
   'about.quote': '“Instead of thinking longer,<br />I look for a better <em>way</em>.”',
   'about.quoteSub': 'Understand the problem properly, pick the right tools, and find the most efficient fix.',
   'about.stat': 'companies, across frontend, backend and full-stack roles',
-  'hero.sub': "It's Yulim, a full-stack <em>TypeScript</em> developer",
-  'hero.rail': 'Full-stack TypeScript developer',
-  'edu.note': 'High school and university in the Philippines, taught in English',
-  'edu.list': `
-            <li><span>2019 ~ 2021</span><strong>Korea IT Academy</strong><em>Java, DBMS, Linux, networking, information security and web development</em></li>
-            <li><span>2015 ~ 2016</span><strong>University of the Philippines</strong><em>Forestry (on leave)</em></li>
-            <li><span>2011 ~ 2015</span><strong>South Hill School</strong><em>Philippines · Graduated</em></li>
-`,
 
   'xp.clap': `
               <li><strong>Core workflows:</strong> Worked on 20+ features, including appeals, goal groups, self-selected reviews and HR card file management</li>
@@ -37,7 +29,6 @@ export const en: Record<string, string> = {
               <li>Set up a CI/CD pipeline with GitHub Actions</li>
 `,
   'xp.craa': `
-              <li>Worked for a US company on products for US clients, with the product, data and documentation all in English</li>
               <li>Built the frontend and backend of four training portals (admin, client, user and training) for a global pharmaceutical company</li>
               <li>Implemented live screen recording for online exams and chunked uploads with retries for large video files</li>
               <li>Built the admin workflow for reviewing exam recordings by timestamp and grading answers</li>
