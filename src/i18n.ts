@@ -7,14 +7,15 @@ export type Lang = 'ko' | 'en';
  * Korean is the markup itself, so only English lives here.
  */
 export const en: Record<string, string> = {
-  'about.lead1':
-    'I find the gaps and edge cases in a spec before they turn into bugs, and I ship features that hold up even when the requirements keep shifting.',
+  'about.lead1': "Hi, I'm Yulim, a developer and the teammate you'll always want to work with. :)",
   'about.lead2':
-    "I've worked on both the frontend and the backend, covering the whole cycle from UI and ERD design to API integration, payments, CI/CD and launch.<br />For the past two years at Clap, a performance management SaaS, I designed and built review workflows that change depending on roles and states. I've also brought Claude Code and AI-driven browser QA into my day-to-day work to ship faster and test more thoroughly.",
+    "With AI writing code alongside us, good code is a given. So I put more care into how we work together. I share not just my conclusions but how I reached them, I try to understand my teammates' context first, and I pass on what I learn. I'm a developer who settles deep into an organization and grows with the team for the long run.",
   'about.lead3':
-    "With AI writing code alongside us, good code is the baseline. So I put just as much care into how I work with people. I share how I reach decisions, not just the outcome, I take time to understand my teammates' context, and I pass on what I learn. I'm the kind of developer who settles into a team and grows with it for the long run.",
-  'about.quote': '“Instead of thinking longer,<br />I look for a better <em>way</em>.”',
-  'about.quoteSub': 'Understand the problem properly, pick the right tools, and find the most efficient fix.',
+    "I don't just rely on the requirements. I look for the gaps and edge cases in a spec first. Even when requirements are complex and keep changing, I believe it's a developer's responsibility to stay focused on what matters and see the work through.",
+  'about.lead4':
+    "On the technical side, I've worked on both the frontend and the backend, covering the whole cycle from UI and ERD design to API integration, payments, CI/CD and launch.<br />For the past two years at Clap, a performance management SaaS, I've designed and built review workflows that change depending on roles and states. I also see working with AI as an essential skill today, and I've used Claude Code heavily in development along with AI-driven browser QA to ship faster and verify features more thoroughly.",
+  'about.quote': '“In the AI era, anyone can write good code.<br />Now it takes insight, verification, teamwork and a human <em>touch</em>.”',
+  'about.quoteSub': 'My teammates’ favorite? It’s me.',
   'about.stat': 'companies, across frontend, backend and full-stack roles',
 
   'xp.clap': `

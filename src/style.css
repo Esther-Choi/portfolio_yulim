@@ -733,6 +733,7 @@ button {
   line-height: 1.15;
   letter-spacing: -0.035em;
   word-break: keep-all;
+  text-wrap: balance;
 }
 .about__quote em {
   color: #ffb648;
